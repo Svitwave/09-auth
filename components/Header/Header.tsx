@@ -21,9 +21,7 @@ export const Header = () => {
               Notes
             </Link>
           </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
+
           <li>
             <AuthNavigation />
           </li>
