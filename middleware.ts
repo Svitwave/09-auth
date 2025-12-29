@@ -60,7 +60,7 @@ export async function middleware(request: NextRequest) {
 
   if (isPublicRoute && accessToken) {
     // Якщо користувач аутентифікований і намагається потрапити на публічний маршрут, редірект на /profile
-    return NextResponse.redirect(new URL("/profile", request.url));
+    return NextResponse.redirect(new URL("/", request.url));
   }
 
   // Все інші випадки — дозволяємо доступ
